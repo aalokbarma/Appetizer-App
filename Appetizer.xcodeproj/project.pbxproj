@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0DAF816C2B39AC0C0062D651 /* AppetizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF816B2B39AC0C0062D651 /* AppetizerApp.swift */; };
-		0DAF816E2B39AC0C0062D651 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF816D2B39AC0C0062D651 /* ContentView.swift */; };
+		0DAF816E2B39AC0C0062D651 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF816D2B39AC0C0062D651 /* AppetizerTabView.swift */; };
 		0DAF81702B39AC0D0062D651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DAF816F2B39AC0D0062D651 /* Assets.xcassets */; };
 		0DAF81732B39AC0D0062D651 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DAF81722B39AC0D0062D651 /* Preview Assets.xcassets */; };
 		0DAF817D2B39AC0E0062D651 /* AppetizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF817C2B39AC0E0062D651 /* AppetizerTests.swift */; };
 		0DAF81872B39AC0E0062D651 /* AppetizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF81862B39AC0E0062D651 /* AppetizerUITests.swift */; };
 		0DAF81892B39AC0E0062D651 /* AppetizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF81882B39AC0E0062D651 /* AppetizerUITestsLaunchTests.swift */; };
+		0DAF81962B39AC9D0062D651 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF81952B39AC9D0062D651 /* AppetizerListView.swift */; };
+		0DAF81982B39ACB40062D651 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF81972B39ACB40062D651 /* AccountView.swift */; };
+		0DAF819A2B39ACCE0062D651 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF81992B39ACCE0062D651 /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		0DAF81682B39AC0C0062D651 /* Appetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAF816B2B39AC0C0062D651 /* AppetizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerApp.swift; sourceTree = "<group>"; };
-		0DAF816D2B39AC0C0062D651 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0DAF816D2B39AC0C0062D651 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
 		0DAF816F2B39AC0D0062D651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DAF81722B39AC0D0062D651 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0DAF81782B39AC0E0062D651 /* AppetizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppetizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		0DAF81822B39AC0E0062D651 /* AppetizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppetizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAF81862B39AC0E0062D651 /* AppetizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerUITests.swift; sourceTree = "<group>"; };
 		0DAF81882B39AC0E0062D651 /* AppetizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0DAF81952B39AC9D0062D651 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		0DAF81972B39ACB40062D651 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		0DAF81992B39ACCE0062D651 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +101,12 @@
 			isa = PBXGroup;
 			children = (
 				0DAF816B2B39AC0C0062D651 /* AppetizerApp.swift */,
-				0DAF816D2B39AC0C0062D651 /* ContentView.swift */,
+				0DAF816D2B39AC0C0062D651 /* AppetizerTabView.swift */,
 				0DAF816F2B39AC0D0062D651 /* Assets.xcassets */,
 				0DAF81712B39AC0D0062D651 /* Preview Content */,
+				0DAF81952B39AC9D0062D651 /* AppetizerListView.swift */,
+				0DAF81972B39ACB40062D651 /* AccountView.swift */,
+				0DAF81992B39ACCE0062D651 /* OrderView.swift */,
 			);
 			path = Appetizer;
 			sourceTree = "<group>";
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DAF816E2B39AC0C0062D651 /* ContentView.swift in Sources */,
+				0DAF81982B39ACB40062D651 /* AccountView.swift in Sources */,
+				0DAF816E2B39AC0C0062D651 /* AppetizerTabView.swift in Sources */,
 				0DAF816C2B39AC0C0062D651 /* AppetizerApp.swift in Sources */,
+				0DAF81962B39AC9D0062D651 /* AppetizerListView.swift in Sources */,
+				0DAF819A2B39ACCE0062D651 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
