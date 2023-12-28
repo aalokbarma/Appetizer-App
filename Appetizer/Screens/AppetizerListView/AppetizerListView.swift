@@ -17,15 +17,18 @@ struct AppetizerListView: View {
             NavigationStack{
                 List(viewModal.appetizers, id: \.id){ appetizer in
                     AppetizerListCell(appetizer: appetizer)
+                        .listRowSeparator(.hidden)
+//                        .listRowSeparatorTint(.brandPrimary)
                         .onTapGesture {
                             viewModal.selectedAppetizer = appetizer
                             viewModal.isShowingDetail = true
                         }
                 }
                 .navigationTitle("🍟 Appetizers")
+                .listStyle(.plain)
                 .disabled(viewModal.isShowingDetail)
             }
-            .onAppear{
+            .task {
                 viewModal.getAppetizers()
             }
             .blur(radius: viewModal.isShowingDetail ? 10 : 0)

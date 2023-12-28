@@ -35,6 +35,9 @@
 		0DAF81CB2B3D8E2F0062D651 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF81CA2B3D8E2F0062D651 /* User.swift */; };
 		0DAF81CD2B3D92F30062D651 /* OrdersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF81CC2B3D92F30062D651 /* OrdersListView.swift */; };
 		0DAF81D02B3DC1E50062D651 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF81CF2B3DC1E50062D651 /* EmptyState.swift */; };
+		0DAF81D22B3DC77E0062D651 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF81D12B3DC77E0062D651 /* Order.swift */; };
+		0DAF81D52B3DD2E40062D651 /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF81D42B3DD2E40062D651 /* CustomModifier.swift */; };
+		0DAF81D72B3DE6910062D651 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF81D62B3DE6910062D651 /* Date+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		0DAF81CA2B3D8E2F0062D651 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0DAF81CC2B3D92F30062D651 /* OrdersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListView.swift; sourceTree = "<group>"; };
 		0DAF81CF2B3DC1E50062D651 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		0DAF81D12B3DC77E0062D651 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		0DAF81D42B3DD2E40062D651 /* CustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
+		0DAF81D62B3DE6910062D651 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +240,7 @@
 			children = (
 				0DAF81A92B3CAEE80062D651 /* Color+Ext.swift */,
 				0DAF81C82B3D89E50062D651 /* String+Ext.swift */,
+				0DAF81D62B3DE6910062D651 /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,6 +259,7 @@
 			children = (
 				0DAF819B2B3C88320062D651 /* Appetizer.swift */,
 				0DAF81CA2B3D8E2F0062D651 /* User.swift */,
+				0DAF81D12B3DC77E0062D651 /* Order.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -264,6 +272,7 @@
 				0DAF81BA2B3CBB1F0062D651 /* Image */,
 				0DAF81B92B3CBB100062D651 /* Cells */,
 				0DAF81B82B3CBB040062D651 /* UIKit Components */,
+				0DAF81D42B3DD2E40062D651 /* CustomModifier.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -455,11 +464,14 @@
 				0DAF81A02B3C952D0062D651 /* NetworkManager.swift in Sources */,
 				0DAF81AC2B3CB4D30062D651 /* RemoteImage.swift in Sources */,
 				0DAF81BE2B3D46B30062D651 /* AppetizerDetailView.swift in Sources */,
+				0DAF81D72B3DE6910062D651 /* Date+Ext.swift in Sources */,
 				0DAF816C2B39AC0C0062D651 /* AppetizerApp.swift in Sources */,
 				0DAF81A62B3CA95F0062D651 /* Alert.swift in Sources */,
 				0DAF81C52B3D5CF30062D651 /* NutritionView.swift in Sources */,
+				0DAF81D22B3DC77E0062D651 /* Order.swift in Sources */,
 				0DAF81C72B3D88580062D651 /* AccountViewModal.swift in Sources */,
 				0DAF81962B39AC9D0062D651 /* AppetizerListView.swift in Sources */,
+				0DAF81D52B3DD2E40062D651 /* CustomModifier.swift in Sources */,
 				0DAF81C92B3D89E50062D651 /* String+Ext.swift in Sources */,
 				0DAF819A2B39ACCE0062D651 /* OrderView.swift in Sources */,
 				0DAF81CB2B3D8E2F0062D651 /* User.swift in Sources */,

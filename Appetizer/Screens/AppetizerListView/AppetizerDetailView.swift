@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AppetizerDetailView: View {
     
+    @EnvironmentObject var order: Order
+    
     let appetizer: Appetizer
     @Binding var isShowingDetail: Bool
     
@@ -27,17 +29,23 @@ struct AppetizerDetailView: View {
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(.center)
                 HStack (spacing: 35){
-                    NutritionView(title: "Calories", value: appetizer.calories)
-                    NutritionView(title: "Carbs", value: appetizer.carbs)
-                    NutritionView(title: "Protein", value: appetizer.protein)
+                    NutritionView(title: "Calories", value: "\(appetizer.calories)cal")
+                    NutritionView(title: "Carbs", value: "\(appetizer.carbs)g")
+                    NutritionView(title: "Protein", value: "\(appetizer.protein)g")
                 }
                 
             }
             Button{
-                print("Button Tapped")
+                order.add(appetizer)
+                isShowingDetail = false
             } label: {
-                APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add to order")
+//                APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add to order")
+                Text("$\(appetizer.price, specifier: "%.2f") - Add to order")
             }
+//            .buttonStyle(.bordered)
+//            .tint(.brandPrimary)
+//            .controlSize(.large)
+            .modifier(StandardButtonStyle())
             .padding(.top, 10)
             .padding(.bottom, 20)
             
