@@ -14,11 +14,10 @@ struct AppetizerDetailView: View {
     
     var body: some View {
         VStack(spacing: 10){
-            Image("dish2")
-                .resizable()
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
                 .frame(width: 320, height: 225)
                 .aspectRatio(contentMode: .fit)
-            VStack (spacing: 35){
+            VStack (spacing: 25){
                 Text(appetizer.name)
                     .font(.title2)
                     .fontWeight(.semibold)
@@ -28,54 +27,19 @@ struct AppetizerDetailView: View {
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(.center)
                 HStack (spacing: 35){
-                    VStack(spacing: 10){
-                        Text("Calories")
-                            .font(.subheadline)
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color("darkgray"))
-                        Text("\(appetizer.calories)")
-                            .font(.headline)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.secondary)
-                            .italic()
-                    }
-                    VStack(spacing: 10){
-                        Text("Carbs")
-                            .font(.subheadline)
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color("darkgray"))
-                        Text("\(appetizer.carbs)")
-                            .font(.headline)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.secondary)
-                            .italic()
-                    }
-                    VStack(spacing: 10){
-                        Text("Protein")
-                            .font(.subheadline)
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color("darkgray"))
-                        Text("\(appetizer.protein)")
-                            .font(.headline)
-                            .fontWeight(.semibold)
-                            .foregroundColor(.secondary)
-                            .italic()
-                    }
+                    NutritionView(title: "Calories", value: appetizer.calories)
+                    NutritionView(title: "Carbs", value: appetizer.carbs)
+                    NutritionView(title: "Protein", value: appetizer.protein)
                 }
                 
             }
             Button{
                 print("Button Tapped")
             } label: {
-                Text("$\(appetizer.price, specifier: "%.2f") - Add to order")
-                    .frame(width: 260, height: 50)
-                    .background(Color.brandPrimary)
-                    .foregroundColor(.white)
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .cornerRadius(10)
+                APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add to order")
             }
-            .padding(.top, 20)
+            .padding(.top, 10)
+            .padding(.bottom, 20)
             
         }
         .frame(width: 320, height: 525, alignment: .top)
@@ -86,14 +50,9 @@ struct AppetizerDetailView: View {
             Button{
                 isShowingDetail = false
             } label: {
-                Image(systemName: "x.circle.fill")
-                    .resizable()
-                    .frame(width: 25, height: 25, alignment: .center)
-                    .padding(5)
-                    .foregroundColor(.white)
+                XDismissButton()
             }
-                 
-                 , alignment: .topTrailing)
+            , alignment: .topTrailing)
     }
 }
 

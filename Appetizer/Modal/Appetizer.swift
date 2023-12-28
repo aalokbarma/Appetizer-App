@@ -33,5 +33,35 @@ struct mockdata {
                                            protein: 10,
                                            carbs: 20)
     
+    static let orderItemOne = Appetizer(id: 1,
+                                           name: "Hello World!!",
+                                           description: "This is a sample hello world program",
+                                           price: 20.9,
+                                           imageURL: "https://www.codelikethewind.org/content/images/size/w2000/2022/05/hello_world.png",
+                                           calories: 20,
+                                           protein: 10,
+                                           carbs: 20)
+    static let orderItemTwo = Appetizer(id: 2,
+                                           name: "Hello World!!",
+                                           description: "This is a sample hello world program",
+                                           price: 20.9,
+                                           imageURL: "https://www.codelikethewind.org/content/images/size/w2000/2022/05/hello_world.png",
+                                           calories: 20,
+                                           protein: 10,
+                                           carbs: 20)
+    static let orderItemThree = Appetizer(id: 3,
+                                           name: "Hello World!!",
+                                           description: "This is a sample hello world program",
+                                           price: 20.9,
+                                           imageURL: "https://www.codelikethewind.org/content/images/size/w2000/2022/05/hello_world.png",
+                                           calories: 20,
+                                           protein: 10,
+                                           carbs: 20)
+    
+    
     static let appetizers = [sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer]
+    
+    static let orderItems = [orderItemOne, orderItemTwo, orderItemThree]
+    
+    
 }
